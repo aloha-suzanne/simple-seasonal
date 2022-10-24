@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,100;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+  display: grid;
+  place-items: center;
+  background-color: #e9f0ce;
+  color: #3b3f20;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  gap: 1rem;
+  }
+
+/*grid display items*/
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: white;
+    width: 100%;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card {
+    grid-area: content;
+    width: 70%;
+    background-color: white;
+    color:#3b3f20; 
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+
+.card-body {
+        padding: 1rem;
+      }
+
+.header {
+    display: flex;
+    justify-content: center;
+    grid-area: header;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: #3b3f20;
+    margin: auto;
+    font-family: Open Sans;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 12px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 18px;
+    border-radius: 12px;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color:#3b3f20;
+}
+
+.navbar a.active {
+    background-color: white;
+    color: #3b3f20;
+}
+
+.footer {
+    grid-area: footer;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    margin: 2rem;
+    padding: 2rem;
+    padding-bottom: 5rem;
+      }
+
+.grid {
+    display: grid;
+    grid-template-columns: 25% 50% 50%;
+    grid-template-areas:
+        "header header header"
+        "navbar navbar navbar"
+        "sidebar content content"
+        "blank   content content"
+        "blank   content content"
+        "footer footer footer";
+    color: #444;
+    grid-gap: 1em;
+    }
+
+/*text*/
+    h1 {
+        color: #d45464;
+        font-size: 5rem;
+        font-weight: bold;
+        font-family: Amatic SC;
+        letter-spacing: 2px;
+        padding-top: 2rem;
+        text-align: center;
+      }
+    
+      .fa-brands {
+        font-size: 30px;
+        padding: 20px;
+        width: 50px;
+        text-align: center;
+        color: #3b3f20;
+      }
+    
+      .fa-brands:hover {
+        opacity: .7;
+      }
+
+      span {
+        color: #d45464;
+        font-size: 2.5rem;
+        font-family: Amatic SC;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+    
+      h4 {
+        padding: 5px;
+        font-size: 18px;
+        font-family: Roboto;
+      }
+    
+      p {
+        padding: 4px;
+        font-family: Roboto;
+      }
+
+      .figcaption {
+        font-family: Amatic SC;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 2px;
+        padding-bottom: 1.5rem;
+      }
+
+      .profile {
+        font-family: Open Sans;
+        padding: 2rem 2rem 4rem 2rem;
+      }
+    
+      /*images*/
+
+      img {
+        display: block;
+        width: 100%;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        height: 20rem;
+        object-fit: cover;
+        text-align: center;
+      }
+
+      .avatar img {
+        border-radius: 50%;
+        margin: auto;
+        object-fit: cover;
+        width: 90%;
+        height: 300px;
+      }
+
+      .recipe-image {
+        display: block;
+        border-radius: 12px;
+        height: 25rem;
+        width: 50%;
+        object-fit: cover;
+        margin: 4rem auto 0 auto;
+      }
+
+      /* button */
+
+      .button {
+        display: inline-block;
+        text-decoration: none;
+        width: 100px;
+        border-radius: 10px;
+        border: none;
+        margin: auto;
+        background-color: #d45464;
+        color: white;
+        font-size: 16px;
+        font-family: Open Sans;
+        padding: 2px;
+      }
