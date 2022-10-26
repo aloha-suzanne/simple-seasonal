@@ -166,6 +166,15 @@ body {
         padding: 2rem 2rem 4rem 2rem;
       }
     
+      .subscribe {
+        color: #d45464;
+      }
+
+      blockquote {
+        color: #d45464;
+        font-family: Roboto;
+      }
+
       /*images*/
 
       img {
