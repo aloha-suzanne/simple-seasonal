@@ -166,3 +166,33 @@ h1 {
   .fa-brands:hover {
     opacity: .7;
   }
+
+  /* Responsive */
+@media (min-width: 300px) and (max-width: 480px) {
+  
+  * {
+    font-size: 1rem;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  nav {
+    margin: 0;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .container {
+    display: block;
+    margin: 0;
+    max-width: 100%;
+  }
+}
