@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,100;1,700&display=swap');
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+@media (max-width: 800px) {
+  .container, .navbar {   
+    flex-direction: column;
+  }
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 body {
@@ -13,6 +20,7 @@ body {
     background-image: linear-gradient(to right top, #e9f0ce, #e5ecca, #e1e8c6, #dde4c3, #d9e0bf, #d1d9b4, #c9d1a9, #c1ca9e, #b3be89, #a6b275, #98a660, #8b9a4c);
     color: #3b3f20;
 }
+/*HEADER AND NAVBAR*/
 
 .navbar {
     background-color: #3b3f20;
@@ -41,6 +49,7 @@ body {
     background-color: white;
     color: #3b3f20;
 }
+/*MAIN CONTENT CARDS*/
 
 .container {
     display: flex;
@@ -80,6 +89,7 @@ img {
     flex-direction: column;
     gap: .5rem;
   }
+/*TEXT*/
 
   h1 {
     color: #d45464;
@@ -108,6 +118,7 @@ img {
     padding: 4px;
     font-family: Roboto;
   }
+/*BUTTONS*/
 
   .button {
     display: inline-block;
@@ -122,15 +133,14 @@ img {
     font-family: Open Sans;
     padding: 2px;
   }
+/*FOOTER*/
 
   .footer {
-    position:relative;
-    left: 0;
-    bottom: 0;
+    position: relative;
     width: 100%;
     height: 60px;
     text-align: center;
-    margin: 2rem;
+    margin: auto;
     padding: 2rem;
     padding-bottom: 5rem;
   }

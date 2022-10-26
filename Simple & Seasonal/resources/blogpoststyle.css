@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,100;1,700&display=swap');
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+html {
+  box-sizing: border-box;
 }
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   display: grid;
   place-items: center;
   background-color: #e9f0ce;
+  background-image: linear-gradient(to right top, #e9f0ce, #e5ecca, #e1e8c6, #dde4c3, #d9e0bf, #d1d9b4, #c9d1a9, #c1ca9e, #b3be89, #a6b275, #98a660, #8b9a4c);
   color: #3b3f20;
   width: 100%;
   text-align: center;
@@ -29,7 +33,6 @@ body {
 
 .card {
     grid-area: content;
-    width: 70%;
     background-color: white;
     color:#3b3f20; 
     border-radius: 12px;
@@ -41,6 +44,7 @@ body {
 .card-body {
         padding: 1rem;
       }
+/*HEADER AND NAVBAR*/
 
 .header {
     display: flex;
@@ -79,6 +83,7 @@ body {
     background-color: white;
     color: #3b3f20;
 }
+/*FOOTER*/
 
 .footer {
     grid-area: footer;
@@ -94,16 +99,16 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: 25% 50% 50%;
+    grid-template-columns: 33% 33% 33%;
     grid-template-areas:
         "header header header"
         "navbar navbar navbar"
         "sidebar content content"
         "blank   content content"
-        "blank   content content"
         "footer footer footer";
     color: #444;
     grid-gap: 1em;
+    margin: 5rem;
     }
 
 /*text*/
@@ -175,9 +180,9 @@ body {
 
       .avatar img {
         border-radius: 50%;
-        margin: auto;
+        margin: 1rem auto 0 auto;
         object-fit: cover;
-        width: 90%;
+        width: 80%;
         height: 300px;
       }
 
@@ -190,9 +195,19 @@ body {
         margin: 4rem auto 0 auto;
       }
 
+      #small {
+        font-size: 20px;
+        text-align: center;
+        color: #3b3f20;
+        padding: 5px;
+        margin: 0;
+        width: auto;
+
+      }
+
       /* button */
 
-      .button {
+      .button   {
         display: inline-block;
         text-decoration: none;
         width: 100px;
