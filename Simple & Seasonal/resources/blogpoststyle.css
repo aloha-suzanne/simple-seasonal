@@ -231,9 +231,13 @@ body {
       }
 
       /* Responsive */
-@media (min-width: 300px) and (max-width: 600px) {
+@media screen and (max-width:767px) {
 
-
+  body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
   nav {
     margin: 0;
   }
@@ -248,6 +252,12 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    order: 1;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
   }
 
   .card {
@@ -255,5 +265,11 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    order: 2;
+    }
+
+    footer {
+      display: flex;
+      order: 3;
     }
   }
