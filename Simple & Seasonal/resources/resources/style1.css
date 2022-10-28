@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,100;1,700&display=swap');
+
+@media (max-width: 800px) {
+  .container, .navbar {   
+    flex-direction: column;
+  }
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: #e9f0ce;
+    background-image: linear-gradient(to right top, #e9f0ce, #e5ecca, #e1e8c6, #dde4c3, #d9e0bf, #d1d9b4, #c9d1a9, #c1ca9e, #b3be89, #a6b275, #98a660, #8b9a4c);
+    color: #3b3f20;
+}
+
+/*TEXT*/
+
+  h1 {
+    color: #d45464;
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: Amatic SC;
+    letter-spacing: 2px;
+    padding-top: 2rem;
+  }
+
+  span {
+    color: #d45464;
+    font-size: 2.5rem;
+    font-family: Amatic SC;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  h4 {
+    padding: 5px;
+    font-size: 18px;
+    font-family: Roboto;
+  }
+
+  p {
+    padding: 4px;
+    font-family: Roboto;
+  }
